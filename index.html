@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="fas fa-bars"></div>
+
+        <a href="#" class="logo">LOGO <i class="fa-solid fa-mug-hot"></i></a>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#anasayfa" class="active">ANASAYFA</a></li>
+                <li><a href="#menu">MENÜ</a></li>
+                <li><a href="#hakkimizda">HAKKIMIZDA</a></li>
+                <li><a href="#franchise">FRANCHISE</a></li>
+                <li><a href="#subelerimiz">ŞUBELERİMİZ</a></li>
+                <li><a href="#iletisim">İLETİŞİM</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- home section starts -->
+
+    <section class="home" id="anasayfa">
+
+        <div class="video">
+            <video src="images/video.mp4" loop muted autoplay></video>
+        </div>
+
+        <div class="content text-center">
+            <h1>LOGO</h1>
+            <p>Her yudumda taze bir başlangıç!</p>
+        </div>
+
+
+    </section>
+
+    <!-- home section ends-->
+
+    <!-- menu section starts -->
+
+    <section class="menu container py-5" id="menu">
+
+        <h1 class="text-center py-4">Coffee Menu</h1>
+
+        <div class="btn-container text-center my-5">
+            <button id="All" class="btn btn-outline-dark btn-item selectable-btn selected">Hepsi</button>
+            <button id="hotDrink" class="btn btn-outline-dark btn-item selectable-btn">Sıcak İçecekler</button>
+            <button id="iceCoffee" class="btn btn-outline-dark btn-item selectable-btn">Ice Kahveler</button>
+            <button id="herbalTea" class="btn btn-outline-dark btn-item selectable-btn">Bitki Çayları</button>
+            <button id="China" class="btn btn-outline-dark btn-item selectable-btn">Filtre Kahveler</button>
+            <button id="China" class="btn btn-outline-dark btn-item selectable-btn">Espresso Kahveler</button>
+            <button id="China" class="btn btn-outline-dark btn-item selectable-btn">Mılkshake</button>
+            <button id="China" class="btn btn-outline-dark btn-item selectable-btn">Kokteyl</button>
+            <button id="China" class="btn btn-outline-dark btn-item selectable-btn">Sandviçler</button>
+            <button id="China" class="btn btn-outline-dark btn-item selectable-btn">Pastalar</button>
+            <button id="China" class="btn btn-outline-dark btn-item selectable-btn">Nargileler</button>
+        </div>
+
+        <!-- menu list starts-->
+
+        <div class="menu-container">
+
+
+        </div>
+
+        <!-- menu list ends -->
+
+    </section>
+
+    <!-- menu section ends-->
+
+
+    <!-- about section starts -->
+
+    <section class="about container py-5" id="hakkimizda">
+        <div class="row ">
+
+            <div class="about-left col-sm-7">
+                <div>
+                    <h1 class="text-center">Hakkımızda</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla itaque ut cumque dignissimos
+                        est, expedita porro aliquid nostrum veniam qui? Sit alias quas iure, hic error eveniet ad et
+                        distinctio, dolores deleniti accusantium nesciunt provident, eum eligendi quo modi quia harum
+                        veritatis atque vero asperiores esse? Laboriosam beatae ipsa autem nihil totam fugiat maxime
+                        expedita porro doloremque, quidem soluta aperiam mollitia qui incidunt ipsum veniam aliquid nemo
+                        corporis, magni necessitatibus nesciunt a ex! Voluptatum mollitia voluptate, distinctio, quidem
+                        nam quasi, quibusdam cupiditate dolorum delectus asperiores saepe tempora voluptatem harum eum
+                        ut ratione voluptatibus est sit. Beatae animi ea adipisci commodi ipsa at est consequuntur?
+                        Natus maxime quas, eligendi tempore quia sed odit odio voluptatum. At sit delectus accusamus quo
+                        recusandae ratione soluta minus, illo dolor natus tenetur praesentium dolorem aut consequuntur.
+                        Voluptate architecto esse laboriosam fugit delectus ducimus error facere, nihil aut corrupti
+                        voluptatibus saepe quasi laborum harum! Nostrum odio dicta, sapiente, expedita ipsa non odit
+                        reprehenderit mollitia cum consequuntur tempora neque fugiat debitis facilis ea reiciendis error
+                        deserunt facere? Dolore quia optio officiis harum praesentium, debitis officia nesciunt iure
+                        veritatis nostrum repudiandae deleniti ipsa nisi, fugit exercitationem sunt, tenetur nam rerum
+                        eaque corrupti expedita ea! Incidunt, ipsum necessitatibus.</p>
+                </div>
+            </div>
+
+            <div class="about-right col-sm-4 offset-sm-1">
+                <img src="images/hookah.png" width="100%" height="600px">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends-->
+
+    <!-- franchise section starts -->
+    <section class="franchise container py-5" id="franchise">
+        <h1 class="text-center py-5">FRANCHİSE BAŞVURU</h1>
+        <div class="row">
+
+            <div class="col-sm-5 offset-sm-1">
+
+                <form action="php/send_mail.php" method="post" class="mb-5">
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label fs-2">İsim Soyisim*</label>
+                        <input type="text" class="form-control fs-3" id="name" name="name" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="telephone" class="form-label fs-2">Telefon*</label>
+                        <input type="tel" class="form-control fs-3" id="telephone" name="telephone">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label fs-2">Mail adresi*</label>
+                        <input type="email" class="form-control fs-3" id="email" name="email"
+                            aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="company" class="form-label fs-2">Şirket ismi (varsa ismi yoksa yok
+                            yazınız.)*</label>
+                        <input type="text" class="form-control fs-3" id="company" name="company"
+                            aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="district" class="form-label fs-2">il / ilçe*</label>
+                        <input type="text" class="form-control fs-3" id="district" name="district"
+                            aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="m2" class="form-label fs-2">Mevcut Dükkanın m2’si (Yoksa yok yazınız.)*</label>
+                        </label>
+                        <input type="text" class="form-control fs-3" id="m2" name="m2" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="amount" class="form-label fs-2">Yatırım Miktarı*</label>
+                        <input type="number" class="form-control fs-3" id="amount" name="amount"
+                            aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label fs-2">Mesaj*</label>
+                        <textarea rows="10" class="form-control fs-3" id="message" name="message"></textarea>
+                    </div>
+
+                    <div class="text-center mb-3">
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="col-sm-5 offset-sm-1">
+
+                <video width="100%" src="images/coffee_video.mp4" loop muted autoplay></video>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- franchise section ends-->
+
+    <!-- branches section starts -->
+    <section class="branches container py-5" id="subelerimiz">
+
+        <h1 class="text-center py-5">ŞUBELERİMİZ</h1>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <img src="images/turkish-coffee.jpg" width="100%" height="400px">
+            </div>
+
+            <div class="address col-sm-7 offset-sm-1">
+                <h2 style="font-size: 8rem;">İzmir, Buca</h1>
+                    <p class="ps-3 fs-1">Adatepe, Erdem Cd. No:33 D:1A, 35400 Buca/İzmir</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- branches section ends -->
+
+    <!-- footer and contact section starts -->
+
+    <footer class="footer container-fluid">
+        <section id="iletisim">
+            <div class="row">
+
+                <div class="footer-left col-sm-4" style="height: 75vh;">
+
+                    <div style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
+                        <h1>LOGO</h1>
+                        <div class="social-media">
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <p>COPYRIGHT © 2025 LOGO. TÜM HAKLARI SAKLIDIR.</p>
+
+                </div>
+
+                <div class="footer-right col-sm-8" style="height: 75vh;">
+
+                    <div class="row" style="height: 75vh;display: flex; align-items: center;">
+
+                        <div class="col-sm-4 offset-sm-4 text-center">
+                            <h1 class="pb-4" style="font-size: 5rem; color: white;">BİZE ULAŞIN</h1>
+                            <div>
+
+                                <div style="display: flex;">
+                                    <i style="font-size: 2rem; color: #fff;" class="fa-solid fa-location-dot"></i>
+                                    <p style="font-size: 1.5rem; color: #fff;">Tozkoparan, General Ali Rıza Gürcan Cd.
+                                        Çırpıcı Çıkmazı Sok. No: 2 34173
+                                        Güngören/İstanbul</p>
+                                </div>
+
+                                <div class="my-3" style="display: flex;">
+                                    <i style="font-size: 2rem; color: #fff" class="fa-solid fa-phone"></i>
+                                    <p class="ps-3" style="font-size: 1.5rem; color: #fff;">+90 505 535 32 75</p>
+                                </div>
+
+                                <div style="display: flex;">
+                                    <i style="font-size: 2rem; color: #fff" class="fa-solid fa-envelope"></i>
+                                    <p class="ps-3" style="font-size: 1.5rem; color: #fff;">info@email.com</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </footer>
+
+    <!-- fotter and contant section ends-->
+
+    <script src="js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kalam", cursive;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    padding: .3rem 2rem;
+    width: 96%;
+    z-index: 1000;
+}
+
+header .logo {
+    color: #333;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+header .nav-bar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+header .nav-bar ul li {
+    margin: 0 1rem;
+}
+
+header .nav-bar ul li a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    transition: .2s linear;
+}
+
+header .nav-bar ul li .active,
+header .nav-bar ul li a:hover {
+    color: #0098a1;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #0098a1;
+    cursor: pointer;
+    display: none;
+    z-index: 20;
+    transition: .2s;
+}
+
+.fa-times {
+    transform: rotateZ(180deg);
+}
+
+.active {
+    top: 0;
+    width: 100%;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.home .video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+.home .content h1{
+    font-size: 5rem;
+    color: white;
+}
+
+.home .content p {
+    font-size: 3rem;
+    color: white;
+}
+
+.menu {
+    min-height: 100vh;
+}
+
+.menu h1 {
+    font-family: "Great Vibes", cursive;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.selected {
+    background-color: #0098a1;  /* Yeşil arka plan seçili buton için */
+    color: white;  /* Beyaz metin rengi */
+  }
+
+.menu .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about {
+    min-height: 100vh;
+}
+
+.about .about-left h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.about .about-left p {
+    font-size: 1.8rem;
+}
+
+.franchise {
+    min-height: 100vh;
+}
+
+.franchise .row {
+    display: flex;
+    align-items: center;
+}
+
+.franchise h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.franchise form button {
+    width: 200px;
+    height: 50px;
+    font-size: 2rem;
+    border-radius: 3rem;
+}
+
+.branches {
+    min-height: 100vh;
+}
+
+.branches h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.branches .row .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer {
+    min-height: 75vh;
+    background-image: url('../images/coffee-footer.jpg');
+    background-size: cover; 
+    background-position: center;
+}
+
+.footer .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    transition: .5s;
+}
+
+.footer .footer-left:hover {
+    background-color: black;
+}
+
+.footer .footer-left h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+.footer .footer-left .social-media a {
+    font-size: 3rem;
+    color: white;
+    margin: 0 1rem;
+}
+
+.footer .footer-left p {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.footer .footer-right {
+    transition: .5s;
+}
+
+.footer .footer-right:hover {
+    background-color: black;
+}
+
+img {
+    transition: .5s;
+}
+
+img:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    
+    html {
+        font-size: 55%;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    header .nav-bar {
+        position: fixed;
+        top: 0;
+        left: -200%;
+        height: 100vh;
+        width: 80vw;
+        background: #fff;
+        box-shadow: 30rem 0 0 rgba(0, 0, 0, .5);
+    }
+
+    header .nav-bar ul {
+        height: 100%;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    header .nav-bar ul li {
+        margin: 2rem 0;
+    }
+    header .nav-bar ul li a {
+        font-size: 3rem;
+    }
+
+    .nav-toggle {
+        left: 0 !important;
+    }
+
+    h1,h2 {
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+   
+}
+
+
+
